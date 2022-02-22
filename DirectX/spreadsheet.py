@@ -38,7 +38,7 @@ height_ages = height + ages
 
 Height_and_ages_Array = np.array(height_ages)
 
-print(Height_and_ages_Array.shape) 
+#print(Height_and_ages_Array.shape) 
 
 #Let us try to reshape the array
 '''
@@ -46,9 +46,9 @@ what reshaping is is just as it sounds changing the shape or the dimentions of t
 e.g if the array is in a shape like [2,2] that a 2d array and we can make all our array just like tahat in the array.
 '''
 #we use the .reshape command or snippet
-print(Height_and_ages_Array.reshape(-1, 90))
+#print(Height_and_ages_Array.reshape(-1, 90))
 
 #calculating the shape for us when we use the -1
 
-
+#
 
