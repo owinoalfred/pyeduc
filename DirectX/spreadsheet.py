@@ -18,6 +18,37 @@ new_height  = np.array(height)
 
 '''
 finding the number of elementsin each array to find out if i commited a mistake
-'''
+
 print(new_ages.size)
 print(new_height.size)
+'''
+
+'''
+finding the shape of an array in numpy as i do in the example below
+
+
+print(new_height.shape)
+print(new_ages.shape)
+'''
+# lets conmine the two lists and cause one mega one 
+
+height_ages = height + ages
+
+#print(height_ages) #then we have to convert it into an array
+
+Height_and_ages_Array = np.array(height_ages)
+
+print(Height_and_ages_Array.shape) 
+
+#Let us try to reshape the array
+'''
+what reshaping is is just as it sounds changing the shape or the dimentions of the array.
+e.g if the array is in a shape like [2,2] that a 2d array and we can make all our array just like tahat in the array.
+'''
+#we use the .reshape command or snippet
+print(Height_and_ages_Array.reshape(-1, 90))
+
+#calculating the shape for us when we use the -1
+
+
+
