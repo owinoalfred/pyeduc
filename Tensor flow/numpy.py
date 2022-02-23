@@ -1,7 +1,11 @@
+import matplotlib.pyplot as plt
 import numpy as np
-import pandas as pd
 
+# X axis parameter:
+xaxis = np.array([2, 8])
 
-pleade = pandas.aseed()
+# Y axis parameter:
+yaxis = np.array([4, 9])
 
-print(pleade)
+plt.plot(xaxis, yaxis)
+plt.show()

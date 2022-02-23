@@ -1,3 +1,4 @@
+from time import strftime
 from kivy.app import App
 from kivy.core.text import LabelBase
 from kivy.core.window import Window
@@ -15,6 +16,14 @@ if __name__ == '__main__':
                    fn_bold = './Aswsets/Roboto-Bold.ttf'
                 )
     ClockApp().run()
+    
+    
+    def update_time(self,  nap):
+        self.root.ids.time.text = strftime('[b] % H [/b]:  %M : %S')
+        
+        
+def on_start(self):
+    ClockApp.schedule_interval(self.update_time, 1)
 
 
 ClockApp().run()
