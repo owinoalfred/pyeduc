@@ -1,8 +1,20 @@
 from kivy.app import App
-from kivy.uix.button import Button
+from kivy.core.text import LabelBase
+from kivy.core.window import Window
+from kivy.utils import get_color_from_hex
 
-class TestApp(App):
-    def build(self):
-        return Button(text='Hello World')
+class ClockApp(App):
+    pass
 
-TestApp().run()
+
+if __name__ == '__main__':
+    
+    Window.clearcolor = get_color_from_hex('#101216')
+    LabelBase.register(name =" Roboto",
+                   fn_regular = './Aswsets/Roboto-Regular.ttf',
+                   fn_bold = './Aswsets/Roboto-Bold.ttf'
+                )
+    ClockApp().run()
+
+
+ClockApp().run()
